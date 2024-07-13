@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-13T12:00:03 IST" name="Default suite" finished-at="2024-07-13T12:06:17 IST" duration-ms="374803">
+    <groups>
+    </groups>
+    <test started-at="2024-07-13T12:00:03 IST" name="Default test" finished-at="2024-07-13T12:06:17 IST" duration-ms="374803">
+      <class name="com.test.BaseTestNg">
+        <test-method signature="launch_bigbaket()[pri:0, instance:com.test.BaseTestNg@793f29ff]" started-at="2024-07-13T12:00:03 IST" name="launch_bigbaket" finished-at="2024-07-13T12:01:18 IST" duration-ms="75047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_bigbaket -->
+        <test-method signature="Search_btn()[pri:0, instance:com.test.BaseTestNg@793f29ff]" started-at="2024-07-13T12:01:18 IST" name="Search_btn" finished-at="2024-07-13T12:01:42 IST" depends-on-methods="com.test.BaseTestNg.launch_bigbaket" duration-ms="23244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_btn -->
+        <test-method signature="Enter_btn()[pri:0, instance:com.test.BaseTestNg@793f29ff]" started-at="2024-07-13T12:01:42 IST" name="Enter_btn" finished-at="2024-07-13T12:02:15 IST" depends-on-methods="com.test.BaseTestNg.Search_btn" duration-ms="33191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Enter_btn -->
+        <test-method signature="add_btn()[pri:0, instance:com.test.BaseTestNg@793f29ff]" started-at="2024-07-13T12:02:15 IST" name="add_btn" finished-at="2024-07-13T12:02:29 IST" depends-on-methods="com.test.BaseTestNg.Enter_btn" duration-ms="14094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_btn -->
+        <test-method signature="add2cart_btn()[pri:0, instance:com.test.BaseTestNg@793f29ff]" started-at="2024-07-13T12:02:29 IST" name="add2cart_btn" finished-at="2024-07-13T12:02:43 IST" depends-on-methods="com.test.BaseTestNg.add_btn" duration-ms="14388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add2cart_btn -->
+        <test-method signature="checkout_btn()[pri:0, instance:com.test.BaseTestNg@793f29ff]" started-at="2024-07-13T12:02:43 IST" name="checkout_btn" finished-at="2024-07-13T12:06:17 IST" depends-on-methods="com.test.BaseTestNg.add2cart_btn" duration-ms="213779" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6009dbf41eb575ec5de6d3b605ce191b, clickElement {id=f.B448B81B0A34984A7409446ECAA97CE7.d.7F583F6F87D68654AAD780B91EB9236B.e.93}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51014}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51014/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6009dbf41eb575ec5de6d3b605ce191b)] -> xpath: (//button[@color="rossoCorsa"])[2]]
+Session ID: 6009dbf41eb575ec5de6d3b605ce191b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6009dbf41eb575ec5de6d3b605ce191b, clickElement {id=f.B448B81B0A34984A7409446ECAA97CE7.d.7F583F6F87D68654AAD780B91EB9236B.e.93}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\new\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51014}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51014/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6009dbf41eb575ec5de6d3b605ce191b)] -> xpath: (//button[@color="rossoCorsa"])[2]]
+Session ID: 6009dbf41eb575ec5de6d3b605ce191b
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:403)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at com.test.BaseTestNg.checkout_btn(BaseTestNg.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:386)
+... 38 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout_btn -->
+      </class> <!-- com.test.BaseTestNg -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
